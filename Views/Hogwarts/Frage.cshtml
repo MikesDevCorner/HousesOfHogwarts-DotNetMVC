@@ -1,0 +1,15 @@
+﻿@model HousesOfHogwarts.Models.Frage
+
+<div class="jumbotron" style="background:@ViewBag.houseColor;">
+    <form action="@Url.Action("Frage", "Hogwarts")" method="get">
+        <div style="font-weight: bold;">@Model.Fragetext</div>
+        @foreach (HousesOfHogwarts.Models.Antwort Antwort in Model.Antworten)
+        {
+            <div class="radio">
+                <label><input type="radio" name="id_antwort" value="@Antwort.Id">@Antwort.Antworttext</label>
+            </div>
+        }
+        <input type="hidden" name="id_frage" value="@Model.Id">
+        <button type="submit" class="btn btn-primary">Weiter</button>
+    </form>
+</div>

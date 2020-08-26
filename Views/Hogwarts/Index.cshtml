@@ -1,0 +1,10 @@
+﻿<div class="jumbotron">
+    <form action="@Url.Action("Frage", "Hogwarts")" method="get">
+        <div class="form-group">
+            <label for="username">Bitte Namen eingeben</label>
+            <input type="text" class="form-control" name="username" id="username" placeholder="Hogrefe Hogrefe">
+            <small id="nameHelp" class="form-text text-muted">@TempData["shortMessage"]</small>
+        </div>
+        <button type="submit" class="btn btn-primary">Weiter</button>
+    </form>  
+</div>
