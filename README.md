@@ -2,7 +2,7 @@
 
 ## Features
 
-Sorting Hat asks you questions to sort you in your house.
+Sorting Hat asks you questions to sort you in your house. Never got finished tho.
 
 
 ## Data
